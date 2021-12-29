@@ -1,0 +1,22 @@
+<h1>Mise a jour d'un provider</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form #myform="ngForm" (ngSubmit)="updateArticle()">
+                <div class="form-group">
+                    <label for="label">Article label </label>
+                    <input ngModel name="label" [(ngModel)]="label" size="20" type="text" class="form-control" id="label" />
+                </div>
+                <div class="form-group">
+                    <label for="price">Article price </label>
+                    <input ngModel name="price" [(ngModel)]="price" size="20" type="text" class="form-control" id="price" />
+                </div>
+                <div class="form-group">
+                    <label for="picture">Article picture </label>
+                    <input ngModel name="picture" [(ngModel)]="picture" size="20" type="text" class="form-control" id="picture" />
+                </div>
+                <button class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
